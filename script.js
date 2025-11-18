@@ -10,6 +10,8 @@ const message = document.getElementById("message");
 const surprise = document.getElementById("Surprise");
 const header = document.getElementById("header");
 const pointer = document.getElementById("pointer");
+const song = document.getElementById("BirthdaySong");
+
 
 // -------------------------
 // ENVELOPE OPEN SEQUENCE
@@ -30,6 +32,7 @@ envelope.addEventListener("click", () => {
 // -------------------------
 
 surpriseBtn.addEventListener("click", () => {
+    song.play();
 
     pointer.style.display = "none";
 
