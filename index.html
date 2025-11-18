@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lottie animations -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!--Header Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Momo+Signature&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    <title>Birthday Card</title>
+</head>
+<body>
+
+    <!-- ENVELOPE FIRST VIEW -->
+    <div id="envelopeContainer">
+        <div id="envelope">
+            <div class="envelope-top"></div>
+            <div class="envelope-bottom"></div>
+            <p class="open-text">Tap to open 💌</p>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY CARD HIDDEN INITIALLY -->
+    <div class="BirthdayCard" id="card">
+
+        <!-- Hidden memoji -->
+        <dotlottie-wc 
+            id="memoji"
+            src="https://lottie.host/09e45f75-ccc4-406c-92f2-26af5007bd71/T87J7A05Fx.lottie"
+            style="width: 350px; height: 250px;"
+            autoplay loop>
+        </dotlottie-wc>
+
+        <h1 id="header" class="header">Click here for a surprise!</h1>
+
+        <dotlottie-wc
+            id="pointer"
+            src="https://lottie.host/572d2702-69f5-4ec3-9c5b-adb6d01a8ca7/2ua1mYsevP.lottie"
+            style="width: 250px; height: 150px; margin-top: -10px;"
+            autoplay loop>
+        </dotlottie-wc>
+
+        <button id="surprisebutton">Click Me!</button>
+
+        <p id="note">Here's a special Message💛</p>
+
+        <p id="message">Hi Swati, Happy Birthday , 
+            Hope tum aaj ka din bahut enjoy karogi ! 
+            Photos toh tumne diye nahi ☹️ , isliye tumhare jaisa hi ek cute aur pyaara sa cat use karna padha hai card me 😂.
+            Hopefully tumhe jo achieve karna hai wo sab kuch mil jaye life me aur tum hamesha khush raho and I'm always there by your side
+            , tum lauto toh milte hain aur kahin ghumna hain toh woh bhi kar sakte hain ?.And just like this cat always stay happy and fluffy😂.
+            Have a great year ahead 🎉🎂🎊.
+
+        </p>
+
+        
+
+    </div>
+
+</body>
+</html>
